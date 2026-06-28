@@ -1,0 +1,76 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/bin/"
+      - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin/"
+      - "/Users/jackson/.local/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/pkg/env/global/bin/"
+      - "/Library/Apple/usr/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/jackson/.local/opt/go/bin/"
+      - "/Users/jackson/go/bin/"
+    searched_directories:
+      - "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/bin/uname"
+      - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin/uname"
+      - "/Users/jackson/.local/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.conan2/p/cmakece4d60c9166d0/p/CMake.app/Contents/bin"
+        - "/Users/jackson/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/Library/Apple/usr/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/jackson/.local/opt/go/bin"
+        - "/Users/jackson/go/bin"
+...

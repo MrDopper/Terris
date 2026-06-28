@@ -1,0 +1,3 @@
+/Users/jackson/Documents/Terris/Terris/CMakeFiles/Terris.dir
+/Users/jackson/Documents/Terris/Terris/CMakeFiles/edit_cache.dir
+/Users/jackson/Documents/Terris/Terris/CMakeFiles/rebuild_cache.dir
