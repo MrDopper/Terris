@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -e
 #These commands are for cleanup
+#Note: Only use this script when use a new library in conan
 rm -rf build
 rm -rf CMakeFiles
 rm -f CMakecache.txt Makefile cmake_install.cmake
