@@ -1,0 +1,49 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'Unix Makefiles' generator",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "PATH": "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/bin:$penv{PATH}"
+            },
+            "cmakeExecutable": "/Users/jackson/.conan2/p/cmakea4947bef40a12/p/CMake.app/Contents/bin/cmake",
+            "toolchainFile": "generators/conan_toolchain.cmake",
+            "binaryDir": "/Users/jackson/Documents/Terris/Terris/build/Release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 8
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "execution": {
+                "jobs": 8
+            },
+            "environment": {
+                "LD_LIBRARY_PATH": "/Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/lib:/Users/jackson/.conan2/p/b/glfwee77cc6b0deda/p/lib:/Users/jackson/.conan2/p/b/zlib5d629da551ada/p/lib:$penv{LD_LIBRARY_PATH}",
+                "DYLD_LIBRARY_PATH": "/Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/lib:/Users/jackson/.conan2/p/b/glfwee77cc6b0deda/p/lib:/Users/jackson/.conan2/p/b/zlib5d629da551ada/p/lib:$penv{DYLD_LIBRARY_PATH}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+. "/Users/jackson/Documents/Terris/Terris/build/Release/generators/deactivate_conanrunenv-release-armv8.sh"
