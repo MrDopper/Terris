@@ -72,10 +72,52 @@ include CMakeFiles/Terris.dir/flags.make
 CMakeFiles/Terris.dir/codegen:
 .PHONY : CMakeFiles/Terris.dir/codegen
 
+CMakeFiles/Terris.dir/src/block.cpp.o: CMakeFiles/Terris.dir/flags.make
+CMakeFiles/Terris.dir/src/block.cpp.o: /Users/jackson/Documents/Terris/Terris/src/block.cpp
+CMakeFiles/Terris.dir/src/block.cpp.o: CMakeFiles/Terris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Terris.dir/src/block.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Terris.dir/src/block.cpp.o -MF CMakeFiles/Terris.dir/src/block.cpp.o.d -o CMakeFiles/Terris.dir/src/block.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/block.cpp
+
+CMakeFiles/Terris.dir/src/block.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Terris.dir/src/block.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jackson/Documents/Terris/Terris/src/block.cpp > CMakeFiles/Terris.dir/src/block.cpp.i
+
+CMakeFiles/Terris.dir/src/block.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Terris.dir/src/block.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jackson/Documents/Terris/Terris/src/block.cpp -o CMakeFiles/Terris.dir/src/block.cpp.s
+
+CMakeFiles/Terris.dir/src/colors.cpp.o: CMakeFiles/Terris.dir/flags.make
+CMakeFiles/Terris.dir/src/colors.cpp.o: /Users/jackson/Documents/Terris/Terris/src/colors.cpp
+CMakeFiles/Terris.dir/src/colors.cpp.o: CMakeFiles/Terris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Terris.dir/src/colors.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Terris.dir/src/colors.cpp.o -MF CMakeFiles/Terris.dir/src/colors.cpp.o.d -o CMakeFiles/Terris.dir/src/colors.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/colors.cpp
+
+CMakeFiles/Terris.dir/src/colors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Terris.dir/src/colors.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jackson/Documents/Terris/Terris/src/colors.cpp > CMakeFiles/Terris.dir/src/colors.cpp.i
+
+CMakeFiles/Terris.dir/src/colors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Terris.dir/src/colors.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jackson/Documents/Terris/Terris/src/colors.cpp -o CMakeFiles/Terris.dir/src/colors.cpp.s
+
+CMakeFiles/Terris.dir/src/grid.cpp.o: CMakeFiles/Terris.dir/flags.make
+CMakeFiles/Terris.dir/src/grid.cpp.o: /Users/jackson/Documents/Terris/Terris/src/grid.cpp
+CMakeFiles/Terris.dir/src/grid.cpp.o: CMakeFiles/Terris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Terris.dir/src/grid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Terris.dir/src/grid.cpp.o -MF CMakeFiles/Terris.dir/src/grid.cpp.o.d -o CMakeFiles/Terris.dir/src/grid.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/grid.cpp
+
+CMakeFiles/Terris.dir/src/grid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Terris.dir/src/grid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jackson/Documents/Terris/Terris/src/grid.cpp > CMakeFiles/Terris.dir/src/grid.cpp.i
+
+CMakeFiles/Terris.dir/src/grid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Terris.dir/src/grid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jackson/Documents/Terris/Terris/src/grid.cpp -o CMakeFiles/Terris.dir/src/grid.cpp.s
+
 CMakeFiles/Terris.dir/src/main.cpp.o: CMakeFiles/Terris.dir/flags.make
 CMakeFiles/Terris.dir/src/main.cpp.o: /Users/jackson/Documents/Terris/Terris/src/main.cpp
 CMakeFiles/Terris.dir/src/main.cpp.o: CMakeFiles/Terris.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Terris.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Terris.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Terris.dir/src/main.cpp.o -MF CMakeFiles/Terris.dir/src/main.cpp.o.d -o CMakeFiles/Terris.dir/src/main.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/main.cpp
 
 CMakeFiles/Terris.dir/src/main.cpp.i: cmake_force
@@ -86,19 +128,41 @@ CMakeFiles/Terris.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Terris.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jackson/Documents/Terris/Terris/src/main.cpp -o CMakeFiles/Terris.dir/src/main.cpp.s
 
+CMakeFiles/Terris.dir/src/position.cpp.o: CMakeFiles/Terris.dir/flags.make
+CMakeFiles/Terris.dir/src/position.cpp.o: /Users/jackson/Documents/Terris/Terris/src/position.cpp
+CMakeFiles/Terris.dir/src/position.cpp.o: CMakeFiles/Terris.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Terris.dir/src/position.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Terris.dir/src/position.cpp.o -MF CMakeFiles/Terris.dir/src/position.cpp.o.d -o CMakeFiles/Terris.dir/src/position.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/position.cpp
+
+CMakeFiles/Terris.dir/src/position.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Terris.dir/src/position.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jackson/Documents/Terris/Terris/src/position.cpp > CMakeFiles/Terris.dir/src/position.cpp.i
+
+CMakeFiles/Terris.dir/src/position.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Terris.dir/src/position.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jackson/Documents/Terris/Terris/src/position.cpp -o CMakeFiles/Terris.dir/src/position.cpp.s
+
 # Object files for target Terris
 Terris_OBJECTS = \
-"CMakeFiles/Terris.dir/src/main.cpp.o"
+"CMakeFiles/Terris.dir/src/block.cpp.o" \
+"CMakeFiles/Terris.dir/src/colors.cpp.o" \
+"CMakeFiles/Terris.dir/src/grid.cpp.o" \
+"CMakeFiles/Terris.dir/src/main.cpp.o" \
+"CMakeFiles/Terris.dir/src/position.cpp.o"
 
 # External object files for target Terris
 Terris_EXTERNAL_OBJECTS =
 
+Terris: CMakeFiles/Terris.dir/src/block.cpp.o
+Terris: CMakeFiles/Terris.dir/src/colors.cpp.o
+Terris: CMakeFiles/Terris.dir/src/grid.cpp.o
 Terris: CMakeFiles/Terris.dir/src/main.cpp.o
+Terris: CMakeFiles/Terris.dir/src/position.cpp.o
 Terris: CMakeFiles/Terris.dir/build.make
 Terris: /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/lib/libraylib.dylib
 Terris: /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/lib/libz.dylib
 Terris: CMakeFiles/Terris.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Terris"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Terris"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Terris.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

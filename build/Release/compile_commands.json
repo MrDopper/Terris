@@ -1,8 +1,32 @@
 [
 {
   "directory": "/Users/jackson/Documents/Terris/Terris/build/Release",
-  "command": "/usr/bin/c++  -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/main.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/main.cpp",
+  "command": "/usr/bin/c++  -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/block.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/block.cpp",
+  "file": "/Users/jackson/Documents/Terris/Terris/src/block.cpp",
+  "output": "CMakeFiles/Terris.dir/src/block.cpp.o"
+},
+{
+  "directory": "/Users/jackson/Documents/Terris/Terris/build/Release",
+  "command": "/usr/bin/c++  -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/colors.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/colors.cpp",
+  "file": "/Users/jackson/Documents/Terris/Terris/src/colors.cpp",
+  "output": "CMakeFiles/Terris.dir/src/colors.cpp.o"
+},
+{
+  "directory": "/Users/jackson/Documents/Terris/Terris/build/Release",
+  "command": "/usr/bin/c++  -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/grid.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/grid.cpp",
+  "file": "/Users/jackson/Documents/Terris/Terris/src/grid.cpp",
+  "output": "CMakeFiles/Terris.dir/src/grid.cpp.o"
+},
+{
+  "directory": "/Users/jackson/Documents/Terris/Terris/build/Release",
+  "command": "/usr/bin/c++  -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/main.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/main.cpp",
   "file": "/Users/jackson/Documents/Terris/Terris/src/main.cpp",
   "output": "CMakeFiles/Terris.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/jackson/Documents/Terris/Terris/build/Release",
+  "command": "/usr/bin/c++  -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/Terris.dir/src/position.cpp.o -c /Users/jackson/Documents/Terris/Terris/src/position.cpp",
+  "file": "/Users/jackson/Documents/Terris/Terris/src/position.cpp",
+  "output": "CMakeFiles/Terris.dir/src/position.cpp.o"
 }
 ]

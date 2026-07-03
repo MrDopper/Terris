@@ -1,5 +1,5 @@
 #include "grid.hpp"
-
+#include "colors.hpp"
 Grid::Grid()
 {
     numRows = 20;
@@ -28,19 +28,6 @@ void Grid::print()
         }
         cout << endl;
     }
-}
-
-std::vector<Color> Grid::getCellColors()
-{
-    Color darkGrey = {26, 31, 40, 255};
-    Color lightPink = {238, 208, 232, 255};
-    Color yellow = {255, 255, 74, 255};
-    Color orange = {255, 136, 15, 255};
-    Color skyBlue = {168, 202, 255, 255};
-    Color navyBlue = {50, 58, 255, 255};
-    Color brightLime = {161, 224, 141, 255};
-
-    return {darkGrey, lightPink, yellow, orange, skyBlue, navyBlue, brightLime};
 }
 
 void Grid::Draw()

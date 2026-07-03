@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include
+CXX_INCLUDES = -I/Users/jackson/Documents/Terris/Terris/include -isystem /Users/jackson/.conan2/p/b/rayli4530d4d0bbb97/p/include -isystem /Users/jackson/.conan2/p/b/zlib5d629da551ada/p/include
 
 CXX_FLAGSarm64 = -stdlib=libc++ -O3 -DNDEBUG -std=gnu++2b -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk
 

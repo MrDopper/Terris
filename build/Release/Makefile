@@ -113,6 +113,7 @@ preinstall/fast:
 
 # clear depends
 depend:
+	$(CMAKE_COMMAND) -P /Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -128,6 +129,78 @@ Terris: cmake_check_build_system
 Terris/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/build
 .PHONY : Terris/fast
+
+src/block.o: src/block.cpp.o
+.PHONY : src/block.o
+
+# target to build an object file
+src/block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/block.cpp.o
+.PHONY : src/block.cpp.o
+
+src/block.i: src/block.cpp.i
+.PHONY : src/block.i
+
+# target to preprocess a source file
+src/block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/block.cpp.i
+.PHONY : src/block.cpp.i
+
+src/block.s: src/block.cpp.s
+.PHONY : src/block.s
+
+# target to generate assembly for a file
+src/block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/block.cpp.s
+.PHONY : src/block.cpp.s
+
+src/colors.o: src/colors.cpp.o
+.PHONY : src/colors.o
+
+# target to build an object file
+src/colors.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/colors.cpp.o
+.PHONY : src/colors.cpp.o
+
+src/colors.i: src/colors.cpp.i
+.PHONY : src/colors.i
+
+# target to preprocess a source file
+src/colors.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/colors.cpp.i
+.PHONY : src/colors.cpp.i
+
+src/colors.s: src/colors.cpp.s
+.PHONY : src/colors.s
+
+# target to generate assembly for a file
+src/colors.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/colors.cpp.s
+.PHONY : src/colors.cpp.s
+
+src/grid.o: src/grid.cpp.o
+.PHONY : src/grid.o
+
+# target to build an object file
+src/grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/grid.cpp.o
+.PHONY : src/grid.cpp.o
+
+src/grid.i: src/grid.cpp.i
+.PHONY : src/grid.i
+
+# target to preprocess a source file
+src/grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/grid.cpp.i
+.PHONY : src/grid.cpp.i
+
+src/grid.s: src/grid.cpp.s
+.PHONY : src/grid.s
+
+# target to generate assembly for a file
+src/grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/grid.cpp.s
+.PHONY : src/grid.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -153,6 +226,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/position.o: src/position.cpp.o
+.PHONY : src/position.o
+
+# target to build an object file
+src/position.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/position.cpp.o
+.PHONY : src/position.cpp.o
+
+src/position.i: src/position.cpp.i
+.PHONY : src/position.i
+
+# target to preprocess a source file
+src/position.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/position.cpp.i
+.PHONY : src/position.cpp.i
+
+src/position.s: src/position.cpp.s
+.PHONY : src/position.s
+
+# target to generate assembly for a file
+src/position.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Terris.dir/build.make CMakeFiles/Terris.dir/src/position.cpp.s
+.PHONY : src/position.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,9 +259,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Terris"
+	@echo "... src/block.o"
+	@echo "... src/block.i"
+	@echo "... src/block.s"
+	@echo "... src/colors.o"
+	@echo "... src/colors.i"
+	@echo "... src/colors.s"
+	@echo "... src/grid.o"
+	@echo "... src/grid.i"
+	@echo "... src/grid.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/position.o"
+	@echo "... src/position.i"
+	@echo "... src/position.s"
 .PHONY : help
 
 
@@ -176,6 +285,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
+	$(CMAKE_COMMAND) -P /Users/jackson/Documents/Terris/Terris/build/Release/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
