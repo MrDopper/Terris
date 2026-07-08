@@ -50,3 +50,11 @@ bool Grid::outOfBoundary(int row, int cols)
     }
     return true;
 }
+
+bool Grid::isCellEmpty(int row, int cols)
+{
+    if(grid[row][cols] == 0){
+        return true;
+    }
+    return false;
+}

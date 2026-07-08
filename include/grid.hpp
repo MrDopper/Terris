@@ -11,6 +11,7 @@ public:
     void print();
     void Draw();
     bool outOfBoundary(int row, int cols);
+    bool isCellEmpty(int row, int cols);
     int grid[20][10];
 
 private:
