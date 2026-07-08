@@ -1,7 +1,6 @@
 #include <iostream>
 #include <raylib.h>
-#include "grid.hpp"
-#include "blocks.cpp"
+#include "game.hpp"
 using namespace std;
 
 int main()
@@ -13,14 +12,13 @@ int main()
 	Grid grid = Grid();
 	grid.print();
 
-	LBlock block = LBlock();
-
+	Game game = Game();
 	while (!WindowShouldClose())
 	{
+		game.handleInput();
 		BeginDrawing();
 		ClearBackground(SKYBLUE);
-		grid.Draw();
-		block.Draw();
+		game.Draw();
 		EndDrawing();
 	}
 	CloseWindow();

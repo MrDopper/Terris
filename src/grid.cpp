@@ -41,3 +41,12 @@ void Grid::Draw()
         }
     }
 }
+
+bool Grid::outOfBoundary(int row, int cols)
+{
+    if (row >= 0 && row < numRows && cols >= 0 && cols < numCols)
+    {
+        return false;
+    }
+    return true;
+}
