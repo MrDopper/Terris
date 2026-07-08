@@ -6,6 +6,7 @@ Game::Game()
     blocks = getAllBlocks();
     currentBlock = getRandomBlocks();
     nextBlock = getRandomBlocks();
+    gameOver = false;
 }
 
 Block Game::getRandomBlocks()
@@ -34,6 +35,11 @@ void Game::Draw()
 void Game::handleInput()
 {
     int keyPress = GetKeyPressed();
+    if (gameOver == true && keyPress != 0)
+    {
+        gameOver = false;
+        Reset();
+    }
     switch (keyPress)
     {
     case KEY_LEFT:
@@ -56,29 +62,38 @@ void Game::handleInput()
 
 void Game::moveBlockLeft()
 {
-    currentBlock.move(0, -1);
-    if (isOutSide() || blockFits() == false)
+    if (!gameOver)
     {
-        currentBlock.move(0, 1);
+        currentBlock.move(0, -1);
+        if (isOutSide() || blockFits() == false)
+        {
+            currentBlock.move(0, 1);
+        }
     }
 }
 
 void Game::moveBlockRight()
 {
-    currentBlock.move(0, 1);
-    if (isOutSide() || blockFits() == false)
+    if (!gameOver)
     {
-        currentBlock.move(0, -1);
+        currentBlock.move(0, 1);
+        if (isOutSide() || blockFits() == false)
+        {
+            currentBlock.move(0, -1);
+        }
     }
 }
 
 void Game::moveBlockDown()
 {
-    currentBlock.move(1, 0);
-    if (isOutSide() || blockFits() == false)
+    if (!gameOver)
     {
-        currentBlock.move(-1, 0);
-        lockBlock();
+        currentBlock.move(1, 0);
+        if (isOutSide() || blockFits() == false)
+        {
+            currentBlock.move(-1, 0);
+            lockBlock();
+        }
     }
 }
 
@@ -97,10 +112,13 @@ bool Game::isOutSide()
 
 void Game::rotateBlock()
 {
-    currentBlock.blockRotation();
-    if (isOutSide() || blockFits() == false)
+    if (!gameOver)
     {
-        currentBlock.undoRotation();
+        currentBlock.blockRotation();
+        if (isOutSide() || blockFits() == false)
+        {
+            currentBlock.undoRotation();
+        }
     }
 }
 
@@ -112,7 +130,12 @@ void Game::lockBlock()
         grid.grid[items.rows][items.cols] = currentBlock.id;
     }
     currentBlock = nextBlock;
+    if (blockFits() == false)
+    {
+        gameOver = true;
+    }
     nextBlock = getRandomBlocks();
+    grid.clearFullRow();
 }
 
 bool Game::blockFits()
@@ -126,4 +149,12 @@ bool Game::blockFits()
         }
     }
     return true;
+}
+
+void Game::Reset()
+{
+    grid.Initialize();
+    blocks = getAllBlocks();
+    currentBlock = getRandomBlocks();
+    nextBlock = getRandomBlocks();
 }

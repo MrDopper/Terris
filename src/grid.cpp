@@ -53,8 +53,56 @@ bool Grid::outOfBoundary(int row, int cols)
 
 bool Grid::isCellEmpty(int row, int cols)
 {
-    if(grid[row][cols] == 0){
+    if (grid[row][cols] == 0)
+    {
         return true;
     }
     return false;
+}
+
+int Grid::clearFullRow()
+{
+    int completed = 0;
+    for (int row = numRows - 1; row >= 0; row--)
+    {
+        if (isRowFull(row))
+        {
+            clearRow(row);
+            completed++;
+        }
+        else if (completed > 0)
+        {
+            moveRowDown(row, completed);
+        }
+    }
+    return completed;
+}
+
+bool Grid::isRowFull(int row)
+{
+    for (int cols = 0; cols < numCols; cols++)
+    {
+        if (grid[row][cols] == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+void Grid::clearRow(int row)
+{
+    for (int cols = 0; cols < numCols; cols++)
+    {
+        grid[row][cols] = 0;
+    }
+}
+
+void Grid::moveRowDown(int row, int numRows)
+{
+    for (int cols = 0; cols < numCols; cols++)
+    {
+        grid[row + numRows][cols] = grid[row][cols];
+        grid[row][cols] = 0;
+    }
 }

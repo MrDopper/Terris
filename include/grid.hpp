@@ -12,6 +12,7 @@ public:
     void Draw();
     bool outOfBoundary(int row, int cols);
     bool isCellEmpty(int row, int cols);
+    int clearFullRow();
     int grid[20][10];
 
 private:
@@ -19,4 +20,7 @@ private:
     int numRows;
     int cellSizes;
     std::vector<Color> colors;
+    bool isRowFull(int row);
+    void clearRow(int row);
+    void moveRowDown(int row, int numRows);
 };

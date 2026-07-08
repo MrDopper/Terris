@@ -13,6 +13,7 @@ public:
     void moveBlockLeft();
     void moveBlockRight();
     void moveBlockDown();
+    bool gameOver;
     Grid grid;
 
 private:
@@ -23,4 +24,5 @@ private:
     void rotateBlock();
     void lockBlock();
     bool blockFits();
+    void Reset();
 };
