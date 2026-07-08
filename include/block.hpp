@@ -7,12 +7,14 @@
 class Block
 {
 public:
+    int id;
+    std::map<int, std::vector<Position>> cells;
     Block();
     void Draw();
     void move(int row, int col);
     std::vector<Position> GetCellPosition();
-    int id;
-    std::map<int, std::vector<Position>> cells;
+    void blockRotation();
+    void undoRotation();
 
 private:
     int cellSize;
