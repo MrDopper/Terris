@@ -1,6 +1,18 @@
 #include <iostream>
 #include <raylib.h>
 #include "game.hpp"
+
+double lastUpdateTime = 0;
+bool eventTrigger(double interval)
+{
+	double currentTime = GetTime();
+	if (currentTime - lastUpdateTime >= interval)
+	{
+		lastUpdateTime = currentTime;
+		return true;
+	}
+	return false;
+}
 using namespace std;
 
 int main()
@@ -16,6 +28,10 @@ int main()
 	while (!WindowShouldClose())
 	{
 		game.handleInput();
+		if (eventTrigger(0.4))
+		{
+			game.moveBlockDown();
+		}
 		BeginDrawing();
 		ClearBackground(SKYBLUE);
 		game.Draw();
