@@ -17,13 +17,11 @@ using namespace std;
 
 int main()
 {
-	const int width = 300;
-	const int height = 600;
+	const int width = 520;
+	const int height = 620;
 	InitWindow(width, height, "Terris");
 	SetTargetFPS(60);
-	Grid grid = Grid();
-	grid.print();
-
+	Font font = LoadFontEx("assets/font/gameFont.otf", 64, 0, 0);
 	Game game = Game();
 	while (!WindowShouldClose())
 	{
@@ -34,6 +32,15 @@ int main()
 		}
 		BeginDrawing();
 		ClearBackground(SKYBLUE);
+		DrawTextEx(font, "Score", {365, 15}, 38, 2, WHITE);
+		DrawTextEx(font, "Next", {370, 170}, 38, 2, WHITE);
+		if (game.gameOver)
+		{
+
+			DrawTextEx(font, "Game Over", {320, 450}, 38, 2, WHITE);
+		}
+		DrawRectangleRounded({335, 55, 170, 60}, 0.3, 6, LIGHTGRAY);
+		DrawRectangleRounded({335, 215, 170, 180}, 0.3, 6, LIGHTGRAY);
 		game.Draw();
 		EndDrawing();
 	}

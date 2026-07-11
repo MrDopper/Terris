@@ -37,7 +37,7 @@ void Grid::Draw()
         for (int cols = 0; cols < numCols; cols++)
         {
             int cellValue = grid[rows][cols];
-            DrawRectangle(cols * cellSizes + 1, rows * cellSizes + 1, cellSizes - 1, cellSizes - 1, colors[cellValue]);
+            DrawRectangle(cols * cellSizes + 11, rows * cellSizes + 11, cellSizes - 1, cellSizes - 1, colors[cellValue]);
         }
     }
 }
