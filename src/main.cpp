@@ -40,6 +40,10 @@ int main()
 			DrawTextEx(font, "Game Over", {320, 450}, 38, 2, WHITE);
 		}
 		DrawRectangleRounded({335, 55, 170, 60}, 0.3, 6, LIGHTGRAY);
+		char scoreText[10];
+		sprintf(scoreText, "%d", game.score);
+		Vector2 textSize = MeasureTextEx(font, scoreText, 32, 8);
+		DrawTextEx(font, scoreText, {320 + (170 - textSize.x) / 2, 65}, 38, 2, WHITE);
 		DrawRectangleRounded({335, 215, 170, 180}, 0.3, 6, LIGHTGRAY);
 		game.Draw();
 		EndDrawing();
