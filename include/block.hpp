@@ -10,7 +10,7 @@ public:
     int id;
     std::map<int, std::vector<Position>> cells;
     Block();
-    void Draw();
+    void Draw(int offSetX, int offSetY);
     void move(int row, int col);
     std::vector<Position> GetCellPosition();
     void blockRotation();
